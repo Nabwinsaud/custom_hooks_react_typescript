@@ -4,6 +4,7 @@ import useCounter from "./hooks/useCount";
 import useCopy from "./hooks/useCopy";
 import useCustomLocalStorage from "./hooks/useCustomLocalStorage";
 import { Index } from "./pages";
+import Debounce from "./pages/Debounce";
 function App() {
   const [state, setState] = useLocalStorage("user", {
     name: "Nabin",
@@ -48,6 +49,7 @@ function App() {
       </button>
 
       <Index />
+      <Debounce />
     </div>
   );
 }
